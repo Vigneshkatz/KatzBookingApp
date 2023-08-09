@@ -13,13 +13,13 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
     @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors) {
 
-//        HttpMethod[] theUnsupportedActions = {HttpMethod.PUT, HttpMethod.POST, HttpMethod.DELETE, HttpMethod.PATCH};
-//
-//        // disable HTTP methods for Product: PUT, POST, DELETE and PATCH
-//        config.getExposureConfiguration()
-//                .forDomainType(Movie.class)
-//                .withItemExposure((metdata, httpMethods) -> httpMethods.disable(theUnsupportedActions))
-//                .withCollectionExposure((metdata, httpMethods) -> httpMethods.disable(theUnsupportedActions));
+        HttpMethod[] theUnsupportedActions = {HttpMethod.PUT, HttpMethod.POST, HttpMethod.DELETE, HttpMethod.PATCH};
+
+        // disable HTTP methods for Product: PUT, POST, DELETE and PATCH
+        config.getExposureConfiguration()
+                .forDomainType(Movie.class)
+                .withItemExposure((metdata, httpMethods) -> httpMethods.disable(theUnsupportedActions))
+                .withCollectionExposure((metdata, httpMethods) -> httpMethods.disable(theUnsupportedActions));
 
     }
 }
