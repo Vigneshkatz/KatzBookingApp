@@ -20,6 +20,7 @@ export class MovielistsComponent implements OnInit {
   listProducts() {
     this.movieService.getProductList().subscribe(
       data => {
+        console.log(data);
         this.movies = data;
       }
     )
