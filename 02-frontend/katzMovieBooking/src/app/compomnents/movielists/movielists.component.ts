@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Movies } from 'src/app/common/movies';
 import { MoviesService } from 'src/app/services/movies.service';
 
@@ -10,7 +10,7 @@ import { MoviesService } from 'src/app/services/movies.service';
 export class MovielistsComponent implements OnInit {
 
   movies: Movies[] = [];
-  
+
   constructor(private movieService: MoviesService) { }
 
   ngOnInit() {

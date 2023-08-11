@@ -1,4 +1,6 @@
-*,*::after,*::before{
+*,
+*::after,
+*::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -7,22 +9,26 @@
     border: none;
     text-decoration: none;
 }
-body{
+
+body {
     background-color: black;
 }
+
 /* header section starts*/
-#header{
+#header {
     height: 8vh;
     /* border: 2px solid red; */
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 1rem 2rem;
 }
-#header .title h1{
+
+#header .title h1 {
     color: #ffc04a;
 }
-.searchMovieInput{
+
+.searchMovieInput {
     color: black;
     height: 2rem;
     /* background-color: red; */
@@ -30,30 +36,37 @@ body{
     width: 20rem;
     padding: 0.5rem;
 }
+
 /* header section ends*/
 
 /* main section starts*/
-main{
+main {
     height: 84vh;
     border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-table{
+
+table {
     margin: auto;
 }
-th{
+
+th {
     color: #ffc04a;
 }
-th,td,tr{
+
+th,
+td,
+tr {
     border: 1px solid white;
     text-align: center;
     padding: 0.5rem;
 }
+
 /* main section ends */
 /* footer section starts*/
-footer{
+footer {
     height: 8vh;
     position: absolute;
     bottom: 0;
@@ -63,7 +76,8 @@ footer{
     width: 100vw;
     padding: 1rem;
 }
-footer .socialMedia ul{
+
+footer .socialMedia ul {
     display: flex;
     width: 15rem;
     /* border: 2px solid red; */
