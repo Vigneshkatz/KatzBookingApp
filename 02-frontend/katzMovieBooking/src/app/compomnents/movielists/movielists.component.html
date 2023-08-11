@@ -1,0 +1,22 @@
+<table class="table">
+
+    <thead class="thead-dark">
+        <tr>
+            <th>Movie Name</th>
+            <th>Director</th>
+            <th>Ticket Price</th>
+            <th>Movie Origin</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let movie of movies">
+            <td>{{movie.name}}</td>
+            <td class="align-middle">{{ movie.director}}</td>
+            <td class="align-middle">{{ movie.ticketPrice | currency:'USD'}}</td>
+            <td class="align-middle">{{ movie.origin}}</td>
+        </tr>
+
+    </tbody>
+</table>
