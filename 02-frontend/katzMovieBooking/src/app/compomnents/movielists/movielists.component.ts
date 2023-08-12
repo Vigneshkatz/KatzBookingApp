@@ -14,11 +14,11 @@ export class MovielistsComponent implements OnInit {
   constructor(private movieService: MoviesService) { }
 
   ngOnInit() {
-    this.listProducts();
+    this.listMovies();
   }
 
-  listProducts() {
-    this.movieService.getProductList().subscribe(
+  listMovies() {
+    this.movieService.getMoviesList().subscribe(
       data => {
         console.log(data);
         this.movies = data;

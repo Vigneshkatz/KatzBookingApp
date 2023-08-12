@@ -16,17 +16,16 @@ export class MoviesService {
     console.log(this.baseUrl);
   }
 
-  getProductList(): Observable<Movies[]> {
-
+  getMoviesList(): Observable<Movies[]> {
     return this.httpClient.get<GetResponse>(this.baseUrl).pipe(
-      tap(response => console.log('API Response:', response)),
-      map(response => response._embedded.products),
-      tap(products => console.log('Mapped Products:', products))
+      // tap(response => console.log('API Response:', response)),
+      map(response => response._embedded.movies)
+      // tap(products => console.log('Mapped Products:', products))
     );
   }
 }
 interface GetResponse {
   _embedded: {
-    products: Movies[];
+    movies: Movies[];
   }
 }

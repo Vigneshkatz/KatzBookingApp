@@ -3,6 +3,5 @@ export class Movies {
                 public director: string,
                 public origin: string,
                 public ticketPrice: number) {
-
     }
 }
