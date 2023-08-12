@@ -1,4 +1,16 @@
-# KatzBookingApp
+![image](https://github.com/Vigneshkatz/KatzBookingApp/assets/107601806/5c90113e-1f87-44de-89cb-d35007324bf2)# KatzBookingApp
+# Version 01
+### Frontend (Angular):
+- Create an Angular component to display a list of movies.
+- Use HttpClient to make a GET request to a Spring Boot API endpoint.
+- Display the list of movies on the webpage.
+
+### Backend (Spring Boot):
+- Create a Spring Boot controller for GET requests to retrieve movie data.
+- Use an in-memory data structure (e.g., List) to store movie information.
+- Return mock movie data from the controller.
+![Version - 1](https://raw.githubusercontent.com/Vigneshkatz/KatzBookingApp/main/05-ProjectImages/Version-1.png)
+
 ## TypeScript Note
 TypeScript
 - Feature
