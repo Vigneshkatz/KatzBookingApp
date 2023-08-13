@@ -32,6 +32,7 @@ body{
 #header .title h1 {
     color: #ffc04a;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .searchMovieInput {
