@@ -4,8 +4,9 @@ import { MoviesService } from 'src/app/services/movies.service';
 
 @Component({
   selector: 'app-movielists',
-  templateUrl: './movielists.component.html',
-  styleUrls: ['./movielists.component.css']
+  templateUrl: 'movielists.component-gallery.html',
+  styleUrls: ['./movielists.component.css'
+              ]
 })
 export class MovielistsComponent implements OnInit {
 

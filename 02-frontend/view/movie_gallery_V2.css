@@ -1,41 +1,3 @@
-/* Reset common styles */
-*, *::after, *::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    text-decoration: none;
-}
-
-/* Global styles */
-body {
-    background-color: #1c1c1c;
-    font-family: Arial, sans-serif;
-    color: #ffffff;
-    line-height: 1.5;
-}
-
-/* Header */
-#header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #2c2c2c;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensure header is above other content */
-}
-
-#header .title h1 {
-    color: #ffc04a;
-    font-size: 1.5rem;
-}
-
 .searchMovieInput {
     height: 2.5rem;
     border: none;
@@ -54,26 +16,7 @@ main {
     padding: 2rem;
 }
 
-/* Footer */
-footer {
-    height: 8vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #2c2c2c;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-}
 
-footer .socialMedia ul {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-}
-
-footer .socialMedia ul a{
-    color: #ffc04a;
-}
 
 /* Movie List */
 .movieList_container {
@@ -107,4 +50,3 @@ footer .socialMedia ul a{
     background-color: #1c1c1c;
     opacity: 0.9;
 }
-
