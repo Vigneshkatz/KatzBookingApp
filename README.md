@@ -1,5 +1,5 @@
-![image](https://github.com/Vigneshkatz/KatzBookingApp/assets/107601806/5c90113e-1f87-44de-89cb-d35007324bf2)# KatzBookingApp
-# Version 01
+# KatzBookingApp
+## Version 01
 ### Frontend (Angular):
 - Create an Angular component to display a list of movies.
 - Use HttpClient to make a GET request to a Spring Boot API endpoint.
@@ -11,7 +11,7 @@
 - Return mock movie data from the controller.
 ![Version - 1](https://raw.githubusercontent.com/Vigneshkatz/KatzBookingApp/main/05-ProjectImages/Version-1.png)
 
-# Version 02 Movie Details and Showtimes
+## Version 02 Movie Details and Showtimes
 
 ### Frontend:
 - Create a movie details component to display more information about a selected movie.
@@ -21,6 +21,8 @@
 ### Backend:
 - Enhance the movie data model to include showtimes.
 - Modify the API endpoint to send movie details and showtimes data.
+### Updation
+- Pagination support in using PagingAndSortingRepository
 
 ## TypeScript Note
 TypeScript
