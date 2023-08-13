@@ -11,6 +11,17 @@
 - Return mock movie data from the controller.
 ![Version - 1](https://raw.githubusercontent.com/Vigneshkatz/KatzBookingApp/main/05-ProjectImages/Version-1.png)
 
+# Version 02 Movie Details and Showtimes
+
+### Frontend:
+- Create a movie details component to display more information about a selected movie.
+- Enhance the movie listing component to allow users to click on a movie.
+- Integrate showtimes information into the movie details.
+
+### Backend:
+- Enhance the movie data model to include showtimes.
+- Modify the API endpoint to send movie details and showtimes data.
+
 ## TypeScript Note
 TypeScript
 - Feature
@@ -57,6 +68,12 @@ Y:number
 - Modules
 - Modularity
 
+
 ## Design Reference
 -  https://www.behance.net/gallery/55063489/Movie-Ticket-Booking-App-Prototype
 -  https://medium.com/@mukulchawla/ui-ux-design-process-for-a-fictitious-movie-booking-app-for-flickbay-363778486515
+
+## Changes
+#### Using Dummy Database [Todo]
+#### SOAP UI
+#### hibrante config
