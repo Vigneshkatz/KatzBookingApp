@@ -7,10 +7,10 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 
 @SpringBootApplication
-public class MoviebookingApplication {
+public class MovieBookingApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MoviebookingApplication.class, args);
+		SpringApplication.run(MovieBookingApplication.class, args);
 	}
 	@Autowired
 	private MovieService movieService;

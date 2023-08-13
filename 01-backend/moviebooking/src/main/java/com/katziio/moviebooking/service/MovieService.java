@@ -17,12 +17,12 @@ public class MovieService {
     }
 
     public void printMovies() {
-        List<Movie> movies = movieRepository.findAll();
-        for (Movie movie : movies) {
-            System.out.println("Movie Name: " + movie.getName());
-            System.out.println("Directed By: " + movie.getDirectedBy());
-            System.out.println("Movie Name: " + movie.getOrigin());
-            System.out.println("Directed By: " + movie.getPrice());
-        }
+//        List<Movie> movies = movieRepository.findAll();
+//        for (Movie movie : movies) {
+//            System.out.println("Movie Name: " + movie.getName());
+//            System.out.println("Directed By: " + movie.getDirectedBy());
+//            System.out.println("Movie Name: " + movie.getOrigin());
+//            System.out.println("Directed By: " + movie.getPrice());
+//        }
     }
 }
