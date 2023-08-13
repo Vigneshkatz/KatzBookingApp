@@ -21,10 +21,11 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "**/*",
-              "./node_modules/custom-project/assets",
-              "/assets/"
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "/assets/"
+              }
             ],
             "styles": [
               "src/styles.css",
