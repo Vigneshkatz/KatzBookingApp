@@ -12,15 +12,15 @@ public class Movie {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "moviename")
+    @Column(name = "name")
     private String name;
 
-    @Column(name = "directedby")
+    @Column(name = "director")
     private String directedBy;
 
     @Column(name = "origin")
     private String origin;
 
-    @Column(name = "ticketprice")
-    private Long price;
+    @Column(name = "categoryid")
+    private Long categoryid;
 }
