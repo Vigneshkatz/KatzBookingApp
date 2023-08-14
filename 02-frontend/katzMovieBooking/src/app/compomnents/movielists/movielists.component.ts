@@ -11,6 +11,7 @@ import { MoviesService } from 'src/app/services/movies.service';
 export class MovielistsComponent implements OnInit {
 
   movies: Movies[] = [];
+  page: number = 1;
 
   constructor(private movieService: MoviesService) { }
 

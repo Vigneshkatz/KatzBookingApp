@@ -9,7 +9,7 @@ import { map, tap } from 'rxjs/operators';
 })
 export class MoviesService {
 
-  private baseUrl = 'http://localhost:8080/api/movies';
+  private baseUrl = 'http://localhost:8080/api/movies?page=0&size=100';
 
 
   constructor(private httpClient: HttpClient) {
@@ -18,9 +18,7 @@ export class MoviesService {
 
   getMoviesList(): Observable<Movies[]> {
     return this.httpClient.get<GetResponse>(this.baseUrl).pipe(
-      // tap(response => console.log('API Response:', response)),
       map(response => response._embedded.movies)
-      // tap(products => console.log('Mapped Products:', products))
     );
   }
 }

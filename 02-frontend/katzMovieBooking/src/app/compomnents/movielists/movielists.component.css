@@ -8,6 +8,7 @@
     color: #333333;
     font-size: 1rem;
 }
+
 /* Main content */
 main {
     margin-top: 10vh;
@@ -46,4 +47,9 @@ main {
     text-align: center;
     background-color: #1c1c1c;
     opacity: 0.9;
+}
+
+.paginate pagination-controls {
+    /* background-color: #ffc04a; */
+    font-weight: 600;
 }
