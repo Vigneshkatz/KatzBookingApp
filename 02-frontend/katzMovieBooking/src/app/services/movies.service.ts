@@ -9,7 +9,7 @@ import { map, tap } from 'rxjs/operators';
 })
 export class MoviesService {
 
-  private baseUrl = 'http://localhost:8080/api/movies?page=0&size=100';
+  private baseUrl = 'http://localhost:8080/api/movies?page=0&size=200';
 
 
   constructor(private httpClient: HttpClient) {
