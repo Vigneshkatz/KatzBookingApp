@@ -14,12 +14,12 @@ public class MoviebookingApplication {
 		SpringApplication.run(MoviebookingApplication.class, args);
 	}
 
-	@Autowired
-	private MovieService movieService;
-
-	@EventListener(ApplicationReadyEvent.class)
-	public void printMoviesOnStartup() {
-		movieService.printMovies();
-	}
+//	@Autowired
+//	private MovieService movieService;
+//
+//	@EventListener(ApplicationReadyEvent.class)
+//	public void printMoviesOnStartup() {
+//		movieService.printMovies();
+//	}
 
 }

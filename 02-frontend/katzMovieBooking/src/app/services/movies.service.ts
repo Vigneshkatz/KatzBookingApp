@@ -10,19 +10,23 @@ import { MovieCategory } from '../common/movie-category';
 })
 export class MoviesService {
 
-  private baseMovieUrl = 'http://localhost:8080/api/movies?page=0&size=200';
+  private baseMovieUrl = 'http://localhost:8080/api/movies';
   private baseCategoryUrl = 'http://localhost:8080/api/categories';
 
   constructor(private httpClient: HttpClient) {
     console.log(this.baseMovieUrl);
   }
 
-  getMoviesList(): Observable<Movies[]> {
-    return this.httpClient.get<GetMovieResponse>(this.baseMovieUrl).pipe(
+  getMoviesList(theCategoryId: number): Observable<Movies[]> {
+
+    const searchByCategoryUrl = `${this.baseMovieUrl}/search/findByCategoryid?id=${theCategoryId}&page=0&size=200`;
+    console.log(searchByCategoryUrl);
+    return this.httpClient.get<GetMovieResponse>(searchByCategoryUrl).pipe(
       map(response => response._embedded.movies)
     );
   }
   getMoviesCategoryList(): Observable<any> {
+
     console.log(this.baseCategoryUrl);
     return this.httpClient.get(this.baseCategoryUrl);
   }

@@ -30,7 +30,8 @@
             "styles": [
               "src/styles.css",
               "src/app/styles/styles.css",
-              "src/app/styles/movie_gallery_V2.css"
+              "src/app/styles/movie_gallery_V2.css",
+              "src/app/styles/movie_category_V2.css"
             ],
             "scripts": []
           },

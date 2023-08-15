@@ -3,7 +3,7 @@
     height: 100%;
     max-width: 12rem;
     padding: 3rem 0;
-    box-shadow: 0 -8px 8px 0 #ffc04a;
+    box-shadow: 0 4px 8px 0 rgb(83, 81, 81), 0 2px 2px 0 #ffc04a;
     /* background-color: red; */
 }
 

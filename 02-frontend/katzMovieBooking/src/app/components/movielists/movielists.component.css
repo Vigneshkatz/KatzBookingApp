@@ -1,6 +1,5 @@
 
 .movieList_container {
-    /* margin-top: 10vh; */
     min-height: 80vh;
     padding: 2rem;
     display: flex;
@@ -15,10 +14,12 @@
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
 }
 
 .movie_container:hover {
     transform: scale(1.05);
+    box-shadow: 0 0px 8px 0 #ffc04a;
 }
 
 .movie_container .movie_img {
@@ -30,6 +31,4 @@
 .movie_container .movie_name {
     padding: 1rem;
     text-align: center;
-    background-color: #1c1c1c;
-    opacity: 0.9;
 }
