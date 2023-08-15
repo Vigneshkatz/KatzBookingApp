@@ -50,9 +50,10 @@ body{
 /* main section starts*/
 main {
     display: flex;
-    /* gap: 1rem; */
+    gap: 1rem;
+    /* padding-top: 10vh; */
     margin-top: 10vh;
-    min-height: 82vh;
+    height: 86vh;
 }
 
 /* category section */
@@ -83,7 +84,7 @@ main {
 /* footer section starts*/
 /* Footer */
 footer {
-    height: 8vh;
+    height: 6vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,3 +105,4 @@ footer .socialMedia ul a{
     font-weight: 600
     ;
 }
+
