@@ -11,7 +11,7 @@ import { MovieCategory } from '../common/movie-category';
 export class MoviesService {
 
   private baseMovieUrl = 'http://localhost:8080/api/movies?page=0&size=200';
-  private baseCategoryUrl = 'http://localhost:8080/api/categories?page=0&size=200';
+  private baseCategoryUrl = 'http://localhost:8080/api/categories';
 
   constructor(private httpClient: HttpClient) {
     console.log(this.baseMovieUrl);
@@ -22,10 +22,9 @@ export class MoviesService {
       map(response => response._embedded.movies)
     );
   }
-  getMoviesCategoryList(): Observable<MovieCategory[]> {
-    return this.httpClient.get<GetMovieCategoryResponse>(this.baseCategoryUrl).pipe(
-      map(response => response._embedded.category)
-    );
+  getMoviesCategoryList(): Observable<any> {
+    console.log(this.baseCategoryUrl);
+    return this.httpClient.get(this.baseCategoryUrl);
   }
 }
 interface GetMovieResponse {
