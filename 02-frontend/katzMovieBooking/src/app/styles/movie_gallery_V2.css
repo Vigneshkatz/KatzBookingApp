@@ -9,21 +9,20 @@
     font-size: 1rem;
 }
 /* Main content */
-main {
-    margin-top: 10vh;
+
+
+.movieList_container {
+    /* margin-top: 10vh; */
     min-height: 80vh;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
     padding: 2rem;
 }
 
-/* Movie List */
-.movieList_container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 2rem;
-    padding: 2rem 0;
-}
-
 .movie_container {
+    width: 13rem;
     background-color: #333333;
     border-radius: 0.5rem;
     overflow: hidden;

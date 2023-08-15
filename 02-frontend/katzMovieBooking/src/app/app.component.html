@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KatzBookingApp</title>
     <!-- <link rel="stylesheet" href="02-frontend/katzMovieBooking/src/app/styles"> -->
 </head>
+
 <body>
     <header id="header">
         <div class="title">
             <h1>KatzBookingApp</h1>
         </div>
         <div class="searchMovie">
-            <input class = "searchMovieInput" type="search">
+            <input class="searchMovieInput" type="search">
         </div>
     </header>
     <main id="main">
-        <app-movielists></app-movielists>
+        <div id="category_menu_main">
+            <div class="category_menu">
+                <ul>
+                    <li><a href="#">category_1</a></li>
+                    <li><a href="#">category_1</a></li>
+                    <li><a href="#">category_1</a></li>
+                    <li><a href="#">category_1</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="movieList_container">
+            <app-movielists></app-movielists>
+        </div>
     </main>
     <footer id="footer">
         <div class="copyRights">
@@ -30,4 +44,5 @@
         </div>
     </footer>
 </body>
+
 </html>
