@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Movies } from 'src/app/common/movies';
 import { MoviesService } from 'src/app/services/movies.service';
 
@@ -12,15 +13,30 @@ export class MovielistsComponent implements OnInit {
 
   movies: Movies[] = [];
   page: number = 1;
+  currentCategoryId : number = 1;
 
-  constructor(private movieService: MoviesService) { }
+  constructor(private movieService: MoviesService,
+    private route:ActivatedRoute) { }
 
   ngOnInit() {
-    this.listMovies();
+    this.route.paramMap.subscribe(()=>{
+        this.listMovies();
+    });
+    // this.listMovies();
   }
 
   listMovies() {
-    this.movieService.getMoviesList().subscribe(
+    // check for id
+    const hasCategoryId : boolean = this.route.snapshot.paramMap.has('id');
+
+    if(hasCategoryId)
+    {
+      this.currentCategoryId = +this.route.snapshot.paramMap.get('id')!;
+    }
+    else{
+      this.currentCategoryId = 1;
+    }
+    this.movieService.getMoviesList(this.currentCategoryId).subscribe(
       data => {
         console.log(data);
         this.movies = data;

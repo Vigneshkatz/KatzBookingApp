@@ -17,12 +17,13 @@ export class MoviesService {
     console.log(this.baseMovieUrl);
   }
 
-  getMoviesList(): Observable<Movies[]> {
+  getMoviesList(theCategoryId:number): Observable<Movies[]> {
     return this.httpClient.get<GetMovieResponse>(this.baseMovieUrl).pipe(
       map(response => response._embedded.movies)
     );
   }
   getMoviesCategoryList(): Observable<any> {
+
     console.log(this.baseCategoryUrl);
     return this.httpClient.get(this.baseCategoryUrl);
   }
